@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+form{
+    border: 2px solid black;
+    padding: 5%;
+    background-color: coral;
+    
+}
+#formHead{
+    
+    text-align: center;
+    background-color: black;
+    color: coral;
+    height: 15%;
+    padding: 2%;
+    margin-top: 15%;
+}
+
+
+.navbar-nav a:hover{
+    color: darkorange;
+}
+.navbar-nav a{
+    text-decoration: none;
+}
+.active{
+    background-color: green;
+}
+#demo{
+    margin: 10px;
+    font-size: large;
+    
+    
+}
+
+.navbar{
+    height: 40px;
+}
+#check{
+    color: red;
+}
+
+
+

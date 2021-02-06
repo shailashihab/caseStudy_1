@@ -1,0 +1,102 @@
+{
+    "products" : [
+        {
+            "snumber" : "1",
+            "name" : "  Task1",
+            "quantity" :"2",
+            "unit"  : "kg",
+            "department" : "Dry/Baking Goods",
+            "notes" : "1kg loose sugar and 1 kg Sugar free Natura Sugar Substitute."
+        },
+        {
+            "snumber" : "2",
+            "name" : "  Task 2",
+            "quantity" :"500",
+            "unit"  : "ml",
+            "department" : "Canned/Jarred Goods",
+            "notes" : "If Maggi's ketchup is not available, go for Kissan, no other brands."
+        },
+
+        {
+            "snumber" : "3",
+            "name" : "  Task3",
+            "quantity" :"30",
+            "unit"  : "no.s",
+            "department" : "Diary",
+            "notes" : "A tray of 30, check for the expiry date."
+        },
+        {
+            "snumber" : "4",
+            "name" : "  Task 4",
+            "quantity" :"200",
+            "unit"  : "ml",
+            "department" : "Frozen Section",
+            "notes" : "A medium tin of Mango flavour"
+        },
+        {
+            "snumber" : "5",
+            "name" : "Task 5",
+            "quantity" :"2",
+            "unit"  : "l",
+            "department" : "Diary",
+            "notes" : "! ltr fullfat for kids and 1 ltr lowfat"
+        },
+        {
+            "snumber" : "6",
+            "name" : "  Task 6",
+            "quantity" :"2",
+            "unit"  : "packet",
+            "department" : "Bread/ Bakery",
+            "notes" : "1 packet with expiry date a little longer"
+        },
+        {
+            "snumber" : "7",
+            "name" : "  Task 7",
+            "quantity" :"2",
+            "unit"  : "kg",
+            "department" : "Meat",
+            "notes" : "1 kg boneless and 1 kg with bone"
+        },
+        {
+            "snumber" : "8",
+            "name" : "  Task 8",
+            "quantity" :"1",
+            "unit"  : "ltr",
+            "department" : "Cleaners or in The Health and Beauty Dept",
+            "notes" : "Fairy/Jet is needed"
+        },
+        {
+            "snumber" : "9",
+            "name" : "  Task 9",
+            "quantity" :"1",
+            "unit"  : "kg",
+            "department" : "The Produce",
+            "notes" : "If available select Ambri Apple"
+        },
+        {
+            "snumber" : "10",
+            "name" : "  Task 10",
+            "quantity" :"1",
+            "unit"  : "kg",
+            "department" : "Dry Fruits Section",
+            "notes" : "Medjool dates preferred"
+        },
+        {
+            "snumber" : "11",
+            "name" : "  Task 11",
+            "quantity" :"4",
+            "unit"  : "no.s",
+            "department" : "Personal Care/The Health and Beauty",
+            "notes" : "Search for Saver pack, buy 3 get 1"
+        },
+        {
+            "snumber" : "12",
+            "name" : "  Task 12",
+            "quantity" :"1",
+            "unit"  : "kg",
+            "department" : "The SeaFood Dept.",
+            "notes" : "Choose frozen only if fresh Shrimp is not available. "
+        }
+
+    ]
+}
