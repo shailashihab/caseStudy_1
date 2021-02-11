@@ -11,35 +11,65 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    
+<style>
+body{
+    background-image: url(http://citrusbits.com/wp-content/uploads/2014/09/Best-To-do-task-list-apps-San-Francisco.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+form{
+    background-color: rgb(0,0,0);
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 2;
+    color: white;
+    font-weight: bold;
+    border: 2px solid black;
+    padding: 2%;
+    width: 40%;
+    top: 30%;
+    left: 30%;
+    position: absolute;       
+}
+.formHead{
+    color: coral;
+    text-align: center;
+}
+</style>    
 </head>
 <body>
-    
-        <div class="row">
-            <div class="col-lg-3"></div>
-            <div class="col-lg-6">
-                <div id="formHead"><h1>TO DO SIGNIN</h1></div>
-                
-                <form action="./listPage.html" name="myForm" id="myForm" onsubmit="return validate();">
-                    
-                    <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">UserName</label>
-                    <input type="text" class="form-control" name="UserName" id="inputUserName" aria-describedby="emailHelp">
-          
-                    <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Password</label>
-                    <input type="password" class="form-control"name="password" id="exampleInputPassword1">
-                    </div>
-                    <button type="submit" class="btn btn-primary">Login</button>
-                </form>
-          
-            </div>
-            <div class="col=lg-3"></div>
+        <div class="bg-text">    
+                    <form action="./listPage.html" name="myForm" id="myForm" onsubmit="return validate();">
+                        <div class="mb-3 formHead"><h1>TO DO SIGNIN</h1></div>
+                        <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">UserName</label>
+                        <input type="text" class="form-control" name="UserName" id="inputUserName" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control"name="password" id="exampleInputPassword1">
+                        </div>
+                        <button type="submit" class="btn btn-primary ">Login</button>
+                    </form>
         </div>
+<script>
+ // form validation    
+    function validate(){  
+        var UserName = document.myForm.UserName.value;
+        var password = document.myForm.password.value;
+        if (UserName == "" || password == "") {
+            alert("Please enter UserName and Password");
+            return false;
+        }
+        else if (UserName != "admin" || password != 12345 ){
+            alert("Username/Password is incorrect!!!!");
+            return false;
+        }
+        else if (UserName == "admin" && password == "12345") {
+            return true;
+        }
 
-
-
-
-<script src="./main.js"></script>        
+    }
+// form validation ends here
+</script>        
 </body>
 </html>

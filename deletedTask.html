@@ -80,15 +80,14 @@
               Menu
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <li onclick="del();"><a class="dropdown-item" href="./addedTask.html">Add tasks</a></li>
-                <li><a class="dropdown-item" href="#">Delete tasks</a></li>
+                <li><a class="dropdown-item" href="./addedTask.html">Add tasks</a></li>
+                <li><a class="dropdown-item" href="./deletedTask.html">Delete tasks</a></li>
                 <li><a class="dropdown-item" href="./sortedList.html">Sort </a></li>
               </ul>
           </div>
         <h1>My To-Do List</h1>
     
         <div id="demo"></div>
-        
 
     </div> 
     <script>
@@ -102,10 +101,10 @@ xhttp.onreadystatechange = function(){
         // var Objlist = JSONlist.products;
         for (let i = 0; i < Objlist.length; i++) {
             if (Objlist[i].completed===true) {
-                output += "<input type = checkbox checked disabled style=width:20px;height:20px;>"+Objlist[i].title+"<br>"+"<hr>";
+                output += "<input type = checkbox checked disabled style=width:20px;height:20px; >"+Objlist[i].title+"<br>"+"<hr>";
             }
             else{
-                output += `<input type =checkbox style=width:20px;height:20px; class=myCheck onchange = flagCheck();>${Objlist[i].title}<br><hr>`
+                output += `<input type =checkbox style=width:20px;height:20px; class=myCheck  onchange = flagCheck();>${Objlist[i].title}<br><hr>`
             }   
             document.getElementById("demo").innerHTML=output;
             document.getElementById("demo").style.padding="20px"; 
@@ -127,7 +126,6 @@ function flagCheck(){
             flag++;
         }
     }
-    // if (flag == 5){alert("Congrats!!5 tasks has completed!!");}
     if(flag%5 === 0)
     {
         var j=(flag/5);
@@ -138,17 +136,12 @@ function flagCheck(){
 }
 xhttp.onload=function(){
     alert("Json data is loaded");
+    var delCheck = prompt("Do you want to delete all the checked tasks?");
+   
+    // alert("doubleclick the tasks to be deleted");
+    
 }
-function del(){
-    var checkBox = document.getElementsByClassName("myCheck");
-    for(let i = 0; i < Objlist.length; i++){
-        if(checkBox[i].checked == true){
-            // checkBox[i].setAttribute("hidden","true");
-            // Objlist[i].setAttribute("hidden","true");
-            alert("Checked is going to delete");
-        }
-    }
-}
+
 
     </script>
 </body>

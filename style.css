@@ -19,14 +19,14 @@ form{
 }
 
 
-.navbar-nav a:hover{
-    color: darkorange;
-}
-.navbar-nav a{
+
+.NavBar a{
     text-decoration: none;
+    padding: 10px;
 }
-.active{
-    background-color: green;
+
+.NavBar{
+    
 }
 #demo{
     margin: 10px;
@@ -35,12 +35,8 @@ form{
     
 }
 
-.navbar{
-    height: 40px;
-}
-#check{
-    color: red;
-}
+
+
 
 
 

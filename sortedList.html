@@ -80,15 +80,14 @@
               Menu
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <li onclick="del();"><a class="dropdown-item" href="./addedTask.html">Add tasks</a></li>
-                <li><a class="dropdown-item" href="#">Delete tasks</a></li>
+                <li><a class="dropdown-item" href="./addedTask.html">Add tasks</a></li>
+                <li><a class="dropdown-item" href="./deletedTask.html">Delete tasks</a></li>
                 <li><a class="dropdown-item" href="./sortedList.html">Sort </a></li>
               </ul>
           </div>
         <h1>My To-Do List</h1>
     
         <div id="demo"></div>
-        
 
     </div> 
     <script>
@@ -139,17 +138,6 @@ function flagCheck(){
 xhttp.onload=function(){
     alert("Json data is loaded");
 }
-function del(){
-    var checkBox = document.getElementsByClassName("myCheck");
-    for(let i = 0; i < Objlist.length; i++){
-        if(checkBox[i].checked == true){
-            // checkBox[i].setAttribute("hidden","true");
-            // Objlist[i].setAttribute("hidden","true");
-            alert("Checked is going to delete");
-        }
-    }
-}
-
     </script>
 </body>
 </html>
